@@ -520,6 +520,7 @@ a {
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none
 }
 
 .modal {
@@ -599,8 +600,8 @@ a {
 
 .backdrop__from-icon {
     position: absolute;
-    top: 14px;
-    left: 19px;
+    top: 8px;
+    left: 16px;
 }
 
 .backdrop__form-comment {
@@ -683,6 +684,7 @@ a {
 transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 opacity: 1;
 visibility: visible;
+pointer-events: auto
 }
 /* #endregion backdrop */
 /* end-backdrop modal */
