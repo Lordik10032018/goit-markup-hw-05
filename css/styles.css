@@ -604,9 +604,10 @@ a {
     fill: #4d5ae5;
 }
 
-.backdrop__from-icon {
+.backdrop__form-icon {
     position: absolute;
-    top: 8px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 16px;
 }
 
@@ -624,6 +625,11 @@ a {
     outline: none;
     margin-bottom: 16px;
     vertical-align: top;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__form-comment:focus {
+border-color: #4d5ae5;
 }
 
 .backdrop__form-comment::placeholder {
@@ -683,10 +689,16 @@ a {
     color: #fff;
     min-width: 169px;
     min-height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__btn-send:hover,
+.backdrop__btn-send:focus {
+    background-color: #404bbf;
 }
 
 .backdrop.is-open {
-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 opacity: 1;
 visibility: visible;
 pointer-events: auto
